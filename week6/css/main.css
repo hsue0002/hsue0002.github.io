@@ -50,6 +50,9 @@ nav ul a{
 
 article>p {
     font-size: 24 px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
 }
 
 /*  Adjacent sibling selector */
