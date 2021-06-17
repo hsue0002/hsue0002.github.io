@@ -1,0 +1,33 @@
+body {
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: deepskyblue;
+}
+
+.site-title {
+    color: white;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px    black;
+}
+
+ul {
+    list-style: square;
+}
+
+li:nth-child(odd) {
+    background-color:    deepskyblue;
+}
+
+nav a:link {
+    text-decoration: none;
+    background-color:    yellowgreen;
+    border: 2px solid;
+}
+
+nav a:hover{
+    background-color: violet;
+}
