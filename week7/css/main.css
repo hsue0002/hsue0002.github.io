@@ -4,12 +4,38 @@ body{
     /* Adding background image */
     background-image: url(../images/white_brick_wall.png);
 }
+
+/* You can always add this in CSS */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* You can always add this in CSS */
+img {
+    width: 100%;
+}
+
+/* Display and box-sixing */
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+nav ul a {
+    display: block;
+}
+
 /*
 This is a comment
 */
 h1{
     color: peru;
 }
+
+
 
 p{
     background-color: lightblue;
@@ -32,8 +58,17 @@ nav ul a{
     text-decoration: none;
 }
 
+.orange-link.large-text {
+    position: absolute;
+    position: ;
+    bottom: 0;
+    right: 0;
+}
+
 /* Selecting element with id value */
 #treatofweek{
+    /* always add thie line below to the parent when adding position */
+    position: relative;
     /* colour image repeat position-x position-y / size*/
     background: orange url(../images/bread.jpg) no-repeat center center;
     background-size: cover;
@@ -42,7 +77,7 @@ nav ul a{
     font-size: 1.25rem;
     /*1.25 x 16 = 20px*/
 
-    padding:  1em;
+    padding:  1em 1em 5em 1em;
 
 }
 
@@ -51,7 +86,30 @@ nav ul a{
     background-color: darkslategray;
     color: orange;
     text-decoration: none; 
+    padding: 1.5em;
+    display: block;
 
+}
+
+/* float */
+
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+/* clear the float for the sections */
+section{
+    clear: both;
 }
 
 .large-text{
@@ -134,4 +192,20 @@ n      = 0, 1, 2, 3 ...
 */
 table td:nth-child(2n+1) {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* CSS Box Model */
+section h3 {
+    background-color: cornflowerblue;
+    padding: 1em;
+    width: 50%;
+}
+
+section p {
+    width: 50%;
+    /* top-bottom left-right no negatives*/
+    padding: 1em .5em;
+    /*top right bottom left*/
+    margin: -2em 2em 2em 2em;
+    border-bottom: 2px dashed black;
 }
