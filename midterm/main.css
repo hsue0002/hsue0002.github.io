@@ -84,6 +84,7 @@ First title */
     text-align: center;
 }
 
+/* Navigation */
 nav ul li{
     text-transform: uppercase;
     font-weight: bold;
@@ -94,20 +95,13 @@ nav ul li{
     ;
 }
 
-nav ul a{
-    display: block;
-}
-
-article{
+/* Lighter box */
+.container, article{
     background-color: #d4e9e7;   
     padding: 1.5em;
 }
 
-.container {
-    background-color: #d4e9e7;
-    margin: 2em;
-}
-
+/* Header image */
 #wide{
     width: 100%;
 
