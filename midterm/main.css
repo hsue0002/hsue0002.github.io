@@ -85,7 +85,7 @@ First title */
 #title{
     color: white;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -100,13 +100,12 @@ nav ul li{
     margin-left: 7.5em; 
     padding: 0.5em;
     border-right: 1px solid black;
-    ;
 }
-
+ 
 /* Lighter box */
 .container{
     background-color: #d4e9e7;
-    padding-bottom: 1em;   
+    padding-bottom: 1em;  
 }
 
 article{
@@ -120,14 +119,15 @@ article{
     position: relative;
 }
 
-/* Contact form */
-
-label{
-    display: block;
-    padding: 0.5em;
+/* Square image */
+#square {
+    height: 200px;
+    width: auto;
+    float: left;
+    padding-right: 1em;
 }
 
-/* Form box */
+/*Form box*/
 form{
     border: 1px solid black;
     margin-top: 1em;
@@ -139,20 +139,32 @@ form{
     padding-bottom: 1em;
 }
 
-.form {
-    padding-bottom: 1em;
+/* Text input form */
+#textform label{
+    display: block;
+    padding: 0.5em;
 }
 
-input, textarea{
+#textform input{
+    display: block;
     width: 96%;
     padding-right: 1em;
+    padding bottom: 1em;
+}
+
+textarea{
+    width: 97%;
+    margin-top: 1em;
+}
+
+/* Send button */
+button{
+    border: 1px solid black;
+    background-color: #d4e9e7;
+    padding: 1em;
+    text-transform: uppercase;
+    font-size:x-small;
+    margin-top: 1em;
 
 }
 
-/* Square image */
-#square {
-    height: 200px;
-    width: auto;
-    float: left;
-    padding-right: 1em;
-}
