@@ -101,6 +101,11 @@ nav ul li{
     padding: 0.5em;
     border-right: 1px solid black;
 }
+
+/* Removing the line from contact */
+li:nth-child(3n) {
+    border-right: none;
+    }
  
 /* Lighter box */
 .container{
@@ -145,16 +150,26 @@ form{
     padding: 0.5em;
 }
 
+#message label{
+    display: block;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+/* Message box */
 #textform input{
     display: block;
     width: 96%;
     padding-right: 1em;
-    padding bottom: 1em;
 }
 
 textarea{
     width: 97%;
-    margin-top: 1em;
+}
+
+.form p{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 /* Send button */
