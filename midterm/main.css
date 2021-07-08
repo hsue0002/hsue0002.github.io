@@ -19,8 +19,6 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: auto;
-	padding: auto;
-	border: auto;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -40,6 +38,7 @@ body {
 }
 ol, ul {
 	list-style-type:disc;
+    background-color: #d4e9e7;
 }
 blockquote, q {
 	quotes: none;
@@ -67,13 +66,15 @@ h1 {
 h2 {
     font-size: 2rem;
     padding-left: 1em;
+    background-color: #d4e9e7;
 }
 
 h3 {
     font-size: 1.5rem;
     padding: 1em;
     display: block;
-}
+    background-color: #d4e9e7;
+    }
 
 h4 {
     font-size: 1.25rem;
@@ -150,7 +151,7 @@ form{
     padding: 0.5em;
 }
 
-#message label{
+#textmessage label{
     display: block;
     padding: 0.5em;
     margin-top: 1em;
