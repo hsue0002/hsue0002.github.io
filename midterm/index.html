@@ -9,6 +9,7 @@
 
     <body>
         <div class="container">
+            <!-- Navigation and header image -->
             <header>
                 <img src="images/lone-starfish-wide.jpg" alt="wide" id="wide">
                 <h1 id="title">Lone Starfish</h1>
@@ -40,32 +41,35 @@
          </div>
          <section class="container">
             <h3>Contact us to learn more</h3>
-            <!-- Form -->
-            <form action="thanks.html" method="get">     
-                <div>    
-                     <label for="fullname">Your Name</label>
-                     <input type="text" id="fullname" name="fullname">
-                     <label for="youremail">Your Email</label>
-                     <input type="email" id="youremail" name="youremail" required>
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message">
-                    </textarea>
-                </div>
-                <div>
-                    <p>Would you like to visit the starfish?</p>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="yes" name="past" value="yes">
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="past" value="no">
-                    <label for="no">Maybe</label>
-                    <input type="radio" id="maybe" name="past" value="maybe">
-                </div>
-                <div>
-                  <button type="submit">Send</button>
-                </div>
-            </form>
+            <!-- Text form -->
+            <div>
+              <form action="thanks.html" method="get">     
+                  <div class="form">    
+                        <label for="fullname">Your Name</label>
+                        <input type="text" id="fullname" name="fullname">
+                        <label for="youremail">Your Email</label>
+                        <input type="email" id="youremail" name="youremail" required>
+                   </div>
+                   <div class="form">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message">
+                      </textarea>
+                  </div>
+                  <!-- circle form -->
+                  <div class="form">
+                     <p>Would you like to visit the starfish?</p>
+                      <label for="yes">Yes</label>
+                       <input type="radio" id="yes" name="past" value="yes">
+                       <label for="no">No</label>
+                       <input type="radio" id="no" name="past" value="no">
+                      <label for="no">Maybe</label>
+                       <input type="radio" id="maybe" name="past" value="maybe">
+                   </div>
+                    <div>
+                    <button type="submit">Send</button>
+                  </div>
+             </form>
+            </div>
         </section>
     </body>
 </html>
