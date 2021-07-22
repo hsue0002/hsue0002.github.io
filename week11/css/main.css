@@ -216,6 +216,30 @@ p{
 /* -------------------------------------------------------------------
                     Desktop Styles
 ------------------------------------------------------------------- */
+
+.card {
+    border: 1px solid #00ADD8;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.card .info{
+    padding: 1em;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* News section */
+.news {
+    border-top: 2px solid #00add0;
+    margin-top: 4em;
+}
+
+/* -------------------------------------------------------------------
+                    Desktop Styles
+------------------------------------------------------------------- */
 @media screen and (min-width:600px){
     html{
         font-size: 16px;
@@ -278,3 +302,48 @@ p{
         width: 20%;
     }
 } 
+
+/* ----------------------------------------
+          Climate change page
+------------------------------------------- */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+/* news section */
+.news{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "head head"
+    "left right1"
+    "left right2";
+    gap: 1em;
+}
+
+.news h2{
+    grid-area: head;
+}
+
+.news .left{
+    grid-area: left;
+}
+
+.news .right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+
+.news img{
+    grid-row: 1/3;
+}
+
+.news h3{
+    margin-top:0;
+    font-size: 1.5rem;
+}
