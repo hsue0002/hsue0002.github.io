@@ -150,6 +150,28 @@ p{
     text-align: center;
 }
 
+/* Navigation */
+
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited{
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current{
+    background-color: #00Add8;
+    color: inherit;
+}
+
 /* -------------- Mobile App Section -------------- */
 
 .btn{
@@ -165,6 +187,18 @@ p{
 .btn:focus{
     color: inherit;
     background-color: #00add0;
+}
+
+/* -------------- Actions -------------- */
+
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
 }
 
 /* -------------- Footer -------------- */
@@ -186,7 +220,7 @@ p{
     html{
         font-size: 16px;
     }
-}
+
 
 .mobile-logo{
     display: none;
@@ -205,6 +239,21 @@ p{
     color: white;
 }
 
+/* Navigation */
+.nav-list{
+    display: flex;
+}
+
+.nav-list li {
+    flex: 1;
+    border: none;
+    border-right: 1px solid grey;
+}
+
+.nav-list li:last-child {
+    border: none;
+}
+
 /* App section */
 .app img{
     width: 40%;
@@ -217,3 +266,15 @@ p{
 }
 
 /* Adds clearfix to the parent */
+
+}
+
+/* -------------------------------------------------------------------
+                    Media query 800px and above
+------------------------------------------------------------------- */
+
+@media screen and (min-width: 800px){
+    .actions-list li{
+        width: 20%;
+    }
+} 
