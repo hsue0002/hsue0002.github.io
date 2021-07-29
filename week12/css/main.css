@@ -1,0 +1,20 @@
+body {
+    font-family: 'raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 400;
+}
+
+.im-twitch{
+    color: purple;
+    font-size: 4rem;
+}
+
+iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display:block;
+}
