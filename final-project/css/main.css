@@ -1,6 +1,8 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+
+    CSS RESET
 */
 
 html, body, div, span, applet, object, iframe,
@@ -17,10 +19,13 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: 10;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	vertical-align: baseline;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -45,4 +50,124 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* -------------------------------------------------------------------
+                    Custom Styles
+------------------------------------------------------------------- */
+
+h1{
+	font-size: 60px;
+	font-weight: bold;
+	color: white;
+}
+
+
+h2{
+	font-size: 50px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1em;
+	}
+
+	/* ---------- NAVIGATION ---------- */
+
+nav ul {
+    display: block;
+	background-color: #222;
+	color: #c78c06;
+	padding: 1em;
+}
+
+nav ul li  {
+    display: block;
+	background-color: #222;
+	color: #c78c06;
+	padding: 1em;
+}
+
+	/* ---------- WELCOME SECTION ---------- */
+
+.welcome img{
+	max-width: 1200px;
+}
+
+.welcome{
+	background-color: rgba(0, 0, 0, 0.7); 
+	padding: 1em;
+	color: white;
+}
+
+.welcome .btn{
+	padding: 3em;
+	color: #222;
+	background-color: #c78c06;
+}
+
+	/* ---------- ABOUT SECTION ---------- */
+
+.about{
+	padding: 1em;
+	background-color: #ffe6ac;
+}
+
+.about img{
+	max-width: inherit;
+	padding-bottom: 3em;
+}
+
+ .about p {
+	 padding-top: 1em;
+ }
+
+ 	/* ---------- SERVICES SECTION ---------- */
+
+
+	 .services h3{
+		font-size: 40px;
+		font-weight: bold;
+		padding-bottom: 10px;
+	 }
+
+	 .services div{
+		 background-color: #ffe6ac;
+		 margin: 1em;
+	 }
+
+	.services .btn{
+		padding: 2em;
+		color: white;
+		background-color: #222;
+	}
+
+	/* ---------- OUR TEAM SECTION ---------- */
+
+	 .team div{
+		padding: 1em;
+		margin: 1em;
+		background-color: #ffe6ac;
+	 }
+
+	/* ---------- FOOTER ---------- */
+
+footer{
+	background-color: #222;
+	color: #c78c06;
+	padding-top: 1em;
+}
+
+footer p{
+	padding: 1em;
 }
