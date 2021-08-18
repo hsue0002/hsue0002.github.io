@@ -27,6 +27,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	vertical-align: baseline;
+	line-height: 1.5em;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -56,118 +57,209 @@ table {
                     Custom Styles
 ------------------------------------------------------------------- */
 
-h1{
-	font-size: 60px;
+h1 {
+	font-size: 6em;
 	font-weight: bold;
 	color: white;
+	line-height: 1.5em;
 }
 
-
-h2{
+h2 {
 	font-size: 50px;
 	font-weight: bold;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
 
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
 }
 
-body{
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 1em;
-	}
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1em;
+}
 
-	/* ---------- NAVIGATION ---------- */
+/* ---------- NAVIGATION ---------- */
 
 nav ul {
-    display: block;
+	display: block;
 	background-color: #222;
 	color: #c78c06;
 	padding: 1em;
 }
 
-nav ul li  {
-    display: block;
+nav ul li {
+	display: block;
 	background-color: #222;
 	color: #c78c06;
 	padding: 1em;
 }
 
-	/* ---------- WELCOME SECTION ---------- */
+/* ---------- WELCOME SECTION ---------- */
 
-.welcome img{
-	max-width: 1200px;
+ .welcome img {
+	max-width: 100%;
+	position: relative;
+	z-index: -1;
+	display: inline-block;
+} 
+
+.welcometext {
+	position: relative;
+	max-width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 3em 1em 3em;
 }
 
-.welcome{
-	background-color: rgba(0, 0, 0, 0.7); 
-	padding: 1em;
-	color: white;
+.welcome p{
+	margin-bottom: 3em;
 }
-
-.welcome .btn{
-	padding: 3em;
+.welcome a {
+	padding: 2em;
 	color: #222;
 	background-color: #c78c06;
+	text-decoration: none;
 }
 
-	/* ---------- ABOUT SECTION ---------- */
+/* ---------- ABOUT SECTION ---------- */
 
-.about{
+.about {
 	padding: 1em;
 	background-color: #ffe6ac;
 }
 
-.about img{
-	max-width: inherit;
+.about img {
+	min-width: 100%;
+	padding-bottom: 1em;
+}
+
+.about p {
+	padding-top: 1em;
+}
+
+/* ---------- SERVICES SECTION ---------- */
+
+
+.services h3 {
+	font-size: 3em;
+	font-weight: bold;
+	padding-bottom: 1px;
+	margin: 0.5em 0.5em 0.15em;
+}
+
+.services div {
+	background-color: #ffe6ac;
+	margin-bottom: 1em;
 	padding-bottom: 3em;
 }
 
- .about p {
-	 padding-top: 1em;
- }
+.services .btn {
+	margin: 1em;
+	padding: 2em;
+	color: white;
+	background-color: #222;
+}
 
- 	/* ---------- SERVICES SECTION ---------- */
+.services img {
+	min-width: 100%;
+}
 
+.services p {
+	padding: 1em 1em 3em;
+}
 
-	 .services h3{
-		font-size: 40px;
-		font-weight: bold;
-		padding-bottom: 10px;
-	 }
+/* ---------- OUR TEAM SECTION ---------- */
 
-	 .services div{
-		 background-color: #ffe6ac;
-		 margin: 1em;
-	 }
+.john {
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: #ffe6ac;
+}
 
-	.services .btn{
-		padding: 2em;
-		color: white;
-		background-color: #222;
-	}
+.bob {
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: #ffe6ac;
+}
 
-	/* ---------- OUR TEAM SECTION ---------- */
+.team h3 {
+	font-size: 3em;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
 
-	 .team div{
-		padding: 1em;
-		margin: 1em;
-		background-color: #ffe6ac;
-	 }
+.team h4 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #c78c06;
+	margin-bottom: 1em;
+}
 
-	/* ---------- FOOTER ---------- */
+.team div {
+	background-color: #ffe6ac;
+}
 
-footer{
+.team p {
+	margin-bottom: 1em;
+}
+
+.team img {
+	min-width: 100%;
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact input {
+	display: block;
+	min-width: 100%;
+	margin: 1em 0 1em;
+}
+
+.contact textarea {
+	display: block;
+	min-width: 100%;
+	margin-top: 1em;
+}
+
+.contact h3{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.contact button{
+	margin: 1em 0 1em;
+	background-color: #222;
+	color: #c78c06;
+	padding: 0.25em;
+}
+
+/* ---------- HOURS AND MAP ---------- */
+
+.hours table {
+	border: 1px solid black;
+}
+
+.location iframe {
+	max-width: 100%;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
 	background-color: #222;
 	color: #c78c06;
 	padding-top: 1em;
 }
 
-footer p{
+footer p {
 	padding: 1em;
 }
+
+
+
+@media screen and (min-width: 800px) {}
