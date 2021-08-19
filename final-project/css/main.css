@@ -77,17 +77,37 @@ h2 {
 	clear: both;
 }
 
-body {
-	max-width: 1200px;
+body, header {
 	margin: 0 auto;
+}
+
+img {
+	width: 100%;
+}
+
+.contact, .services, .team {
 	padding: 1em;
 }
 
+.btn{
+	text-decoration: none;
+}
+
+
+
 /* ---------- NAVIGATION ---------- */
+
+.logo{
+	max-width: 98px;
+}
+
+header{
+	background-color: #222;
+}
 
 nav ul {
 	display: block;
-	background-color: #222;
+	
 	color: #c78c06;
 	padding: 1em;
 }
@@ -97,9 +117,40 @@ nav ul li {
 	background-color: #222;
 	color: #c78c06;
 	padding: 1em;
+	text-align: center;
 }
 
-/* ---------- WELCOME SECTION ---------- */
+ul li:nth-child(1) {
+	text-align: left;
+    }
+
+ul li:nth-child(-n+2) {
+	background-color: #c78c06;
+	color: #222;
+    }
+
+nav input {
+	display: inline-block;
+	min-width: 97%;
+	padding: 1em;
+}
+
+nav button {
+	color:#c78c06;
+	background-color: #222;
+	border: #c78c06 1px solid;
+	padding: 1em;
+}
+
+
+
+/* ---------------------------- WELCOME SECTION ---------------------------- */
+
+.welcome div{
+	background-image: url(/final-project/images/main-banner.jpg);
+	background-size: 100% 100%;
+	background-size: cover;
+}
 
  .welcome img {
 	max-width: 100%;
@@ -109,14 +160,14 @@ nav ul li {
 } 
 
 .welcometext {
-	position: relative;
 	max-width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 3em 1em 3em;
+	padding: 3em 1em 6em;
 }
 
 .welcome p{
 	margin-bottom: 3em;
+	color: white;
 }
 .welcome a {
 	padding: 2em;
@@ -125,24 +176,26 @@ nav ul li {
 	text-decoration: none;
 }
 
-/* ---------- ABOUT SECTION ---------- */
 
-.about {
+
+/* ---------------------------- ABOUT SECTION ---------------------------- */
+
+.about{
 	padding: 1em;
 	background-color: #ffe6ac;
-}
-
-.about img {
-	min-width: 100%;
-	padding-bottom: 1em;
 }
 
 .about p {
 	padding-top: 1em;
 }
 
-/* ---------- SERVICES SECTION ---------- */
+.about img{
+	max-width: 100%;
+}
 
+
+
+/* ---------------------------- SERVICES SECTION ---------------------------- */
 
 .services h3 {
 	font-size: 3em;
@@ -165,14 +218,44 @@ nav ul li {
 }
 
 .services img {
-	min-width: 100%;
+	max-width: 100%;
 }
 
 .services p {
 	padding: 1em 1em 3em;
 }
 
-/* ---------- OUR TEAM SECTION ---------- */
+
+
+/* ---------------------------- VISION SECTION ---------------------------- */
+
+.vision div{
+	background-image: url(/final-project/images/vision.jpg);
+	background-size: 100% 100%;
+	background-size: cover;
+}
+
+.visioninfo{
+	color: white;
+	padding: 2em 2em 4em;
+}
+
+.vision p{
+	margin-bottom: 3em;
+}
+
+.vision .btn{
+	color: white;
+	border: #c78c06 1px solid;
+	padding: 2em; 
+	background-color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 5em;
+}
+
+
+
+/* ---------------------------- OUR TEAM SECTION ---------------------------- */
+
 
 .john {
 	padding: 1em;
@@ -212,7 +295,9 @@ nav ul li {
 	min-width: 100%;
 }
 
-/* ---------- CONTACT ---------- */
+
+
+/* ---------------------------- CONTACT ---------------------------- */
 
 .contact input {
 	display: block;
@@ -228,7 +313,7 @@ nav ul li {
 
 .contact h3{
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 2em; 
 }
 
 .contact button{
@@ -238,28 +323,53 @@ nav ul li {
 	padding: 0.25em;
 }
 
-/* ---------- HOURS AND MAP ---------- */
+
+
+/* ---------------------------- HOURS AND LOCATION ---------------------------- */
 
 .hours table {
+	margin: 1em 0 0;
 	border: 1px solid black;
+	width: 100%;
+}
+
+th{
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	padding: 1em;
+	background-color: #ffe6ac;
+}
+
+td{
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	padding: 1em;
 }
 
 .location iframe {
-	max-width: 100%;
+	min-width: 100%;
 }
 
-/* ---------- FOOTER ---------- */
+.location h3 {
+	padding: 0.5em;
+	font-weight: bold;
+	font-size: 2em; 
+}
+
+
+
+/* ---------------------------- FOOTER ---------------------------- */
 
 footer {
 	background-color: #222;
 	color: #c78c06;
-	padding-top: 1em;
-}
-
-footer p {
 	padding: 1em;
 }
 
+footer p {
+	line-height: 2em;
+}
 
+@media screen and (min-width: 760) {
 
-@media screen and (min-width: 800px) {}
+}
