@@ -333,6 +333,10 @@ nav button {
 
 /* ---------------------------- HOURS AND LOCATION ---------------------------- */
 
+.hours {
+	margin: 1em;
+}
+
 .hours table {
 	margin: 1em 0 0;
 	border: 1px solid black;
@@ -506,7 +510,6 @@ nav input {
 .hours {
 	order: 3;
 	flex-basis: 100%;
-	padding: 1em;
 }
 
 .contact input {
